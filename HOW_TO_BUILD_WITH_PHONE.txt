@@ -1,0 +1,24 @@
+TRIZO cloud APK build (no Android Studio needed)
+================================================
+
+You need a free GitHub account and a browser.
+
+1. Sign in at https://github.com and create a NEW repository named TRIZO-Android.
+   For a university demo, Public is easiest; Private is also possible.
+2. In the new repository, choose Add file > Upload files.
+3. Upload TRIZO_Android_Studio_Project.zip from this kit and commit it to the main branch.
+4. Choose Add file > Create new file.
+5. Name the file exactly:
+   .github/workflows/android-apk.yml
+6. Open android-apk.yml from this kit, copy all its text, paste it into the GitHub editor,
+   then commit the new file to the main branch.
+7. Open the repository's Actions tab. Select "Build TRIZO Android APK".
+8. Press "Run workflow" (if it has not started automatically), then wait for the run to finish.
+9. Open the completed run. Under Artifacts, download "TRIZO-debug-APK".
+10. Extract the downloaded artifact ZIP. It contains app-debug.apk. Download/install it
+    on your Android phone. Android may ask you to allow installation from that browser/file app.
+
+If the Actions tab is hidden, enable Actions in repository Settings > Actions > General.
+
+This builds a DEBUG APK for testing, not a Play Store release. It is not signed with a
+private release key. All payment flows and crypto data remain simulated.
